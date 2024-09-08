@@ -1,0 +1,60 @@
+
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1200px) {
+  .card {
+    flex: 0 1 calc(33.33% - 10px);
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .grid-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-all-button {
+    margin-top: 10px;
+  }
+
+  .card {
+    flex: 0 1 calc(50% - 10px); /* Display 2 cards per row */
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 1 calc(50% - 10px); /* Display 2 cards per row */
+  }
+  
+  .check-grid-section{
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .grid-header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .grid-title {
+    text-align: left;
+    width: 100%;
+  }
+
+  .view-all-button {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}

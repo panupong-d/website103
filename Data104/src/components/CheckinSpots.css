@@ -1,0 +1,88 @@
+/* Main container for the Check-in Spots page */
+.checkin-spots-container {
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  /* Header styling */
+  .checkin-spots-content h1 {
+    text-align: center;
+    color: #094709;
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Grid section for check-in spots (adjust based on your layout) */
+  .checkin-grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Individual check-in item card */
+  .checkin-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .checkin-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  /* Image inside the check-in card */
+  .checkin-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #094709;
+  }
+  
+  /* Content inside each check-in item */
+  .checkin-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .checkin-item p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 10px 20px;
+    text-align: center;
+  }
+  
+  /* Footer fixed at the bottom */
+  footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #094709;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  
+  /* For tablets and smaller desktops */
+  @media (max-width: 1199px) {
+    .content {
+        margin-top: 100px; /* Space under the navbar */
+      }
+
+    .checkin-spots-content h1 {
+        font-size: 36px;
+    }
+  }
+  
+  /* For mobile screens */
+  @media (max-width: 767px) {
+    .checkin-spots-content h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+  }
+  

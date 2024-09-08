@@ -1,0 +1,16 @@
+/* src/components/MapComponent.css */
+.directions-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #006400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .directions-button:hover {
+    background-color: #0c9c0c;;
+  }
+  

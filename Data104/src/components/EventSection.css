@@ -1,0 +1,59 @@
+/* src/pages/EventSection.css */
+
+.event-section {
+    padding: 0px;
+  }
+  
+  .event-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between items */
+  }
+  
+  .event-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width for each item */
+    border: none; /* No border */
+    overflow: hidden;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 100%; /* Fixed height for images */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .event-item:hover .event-image {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+  }
+  
+  .event-details {
+    padding: 10px; /* Padding around text */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background */
+    border-radius: 10px; /* Rounded corners for the background */
+  }
+  
+  .event-title {
+    font-size: 1.25rem; /* Font size for title */
+    margin-bottom: 5px; /* Space below title */
+  }
+  
+  .event-date {
+    font-size: 0.875rem; /* Font size for date */
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .event-item {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .event-image {
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  

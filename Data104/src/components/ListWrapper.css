@@ -1,0 +1,92 @@
+/* Ensure the slider container is positioned correctly */
+.slider-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Full-width slider */
+.slider-fullwidth {
+  width: 100%;
+  margin: 0;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Each slide */
+.slide-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto; /* Remove fixed height */
+  width: auto;
+}
+
+/* Image styling */
+.image {
+  width: auto; /* Let the image control its own width */
+  height: auto; /* Let the image control its own height */
+  max-width: 100%; /* Ensure the image does not overflow the container */
+  max-height: 100%; /* Ensure the image does not overflow its container */
+  object-fit: contain; /* Maintain the image's aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Slider controls */
+.slider-controls {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Control buttons */
+.slider-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller desktop screens */
+@media (max-width: 1200px) {
+  .slide-item {
+    height: auto; /* Adjust height for smaller screens */
+  }
+  
+  .slider-control {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    padding: 8px; /* Reduce padding */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .slide-item {
+    height: auto; /* Further reduce height for mobile */
+  }
+  
+  .slider-control {
+    font-size: 18px; /* Further reduce font size */
+    padding: 6px; /* Further reduce padding */
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .slide-item {
+    height: auto; /* Adjust height for very small screens */
+    padding-top: 0px;
+  }
+  
+  .slider-control {
+    font-size: 16px; /* Further reduce font size */
+    padding: 5px; /* Further reduce padding */
+  }
+}
