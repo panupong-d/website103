@@ -31,7 +31,7 @@
 /* Media Queries สำหรับเดสก์ท็อป */
 @media (min-width: 769px) {
   .content {
-    margin: 50px; /* กำหนด margin ที่เหมาะสมสำหรับเดสก์ท็อป */
+    margin: 20px; /* กำหนด margin ที่เหมาะสมสำหรับเดสก์ท็อป */
     padding: 20px; /* กำหนด padding ที่เหมาะสมสำหรับเดสก์ท็อป */
   }
 }
